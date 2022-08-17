@@ -1,0 +1,86 @@
+ body {
+   text-align: center;
+ }
+  /***************************** container-grid ****************************/
+  .container-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 7% 15%;
+  }
+ /******************************** Headings ********************************/
+  h1{
+    color: white;
+    text-transform:uppercase;
+    font-family: "big Shoulders display";
+  }
+  /***************************** paragraphs ********************************/
+  p{
+    color: white;
+    opacity: 0.75;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    font-family: "Lexend Deca" ,sans-serif;
+  }
+  /**************************** columns ************************************/
+  .car-type{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 12% 16%;
+  }
+  /***************************** sedans ***********************************/
+  .sedans{
+    background-color: #E38826;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  /***************************** SUVS *************************************/
+  .suvs{
+    background-color: #006970;
+  }
+  /**************************** luxury *************************************/
+  .luxury{
+    background-color: #004241;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  /*************************** buttons *************************************/
+  button{
+    margin-top: 90px;
+    margin-bottom: 3%;
+    border-radius: 100px;
+    padding: 7px 5px;
+    border-style: none;
+    background-color: white;
+    mix-blend-mode:lighten;
+  }
+  button:hover{
+    border: 1px solid;
+    background-color: Transparent;
+    mix-blend-mode: normal;
+    cursor: pointer;
+  }
+  /* ____________________________________________________________________*/
+  /************************* For Small Screens ***************************/
+
+  @media (max-width: 760px) {
+    .container-grid{
+      grid-template-columns: unset;
+    }
+    .sedans{
+      border-top-left-radius: 10px;
+      border-bottom-left-radius:0;
+      border-top-right-radius:10px;
+    }
+    .luxury{
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+  }
+
+  /*********************** attributions **********************************/
